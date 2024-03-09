@@ -1,0 +1,19 @@
+{
+    "name": "empowerdb",
+    "version": "1.0.0",
+    "description": "A command-line application to manage a company's employee database.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "init-db": "mysql -u root -p < ./db/schema.sql && mysql -u root -p < ./db/seeds.sql"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "inquirer": "8.2.4",
+      "mysql2": "^2.2.5"
+    }
+  }
+  
